@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Devs - Expert Website Development Services</title>
+    <!-- Google Search Console meta tag -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/0A3D62/FFFFFF?text=WD" type="image/png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        /* Custom scrollbar for better aesthetics */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #f1f5f9; /* Light gray track */
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #94a3b8; /* Gray thumb */
+            border-radius: 4px;
+        }
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: #64748b; /* Darker gray on hover */
+        }
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        .animate-fade-out {
+            animation: fadeOut 0.3s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(-10px); }
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-content.open {
+            max-height: 500px; /* Adjust as needed based on content */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+    <!-- Google Analytics tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRNK01Z946"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WRNK01Z946');
+    </script>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">Website Devs</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a></li>
+                    <li><a href="#features" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a></li>
+                    <li><a href="#faq" class="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-20 px-4 rounded-b-xl shadow-lg">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Your Vision, Our <span class="text-yellow-300">Website Devs</span> Expertise.</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Crafting exceptional online experiences through innovative web development solutions. From concept to launch, we build websites that truly stand out.</p>
+                <a href="#contact" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <!-- Features/Services Section -->
+        <section id="features" class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Core Website Devs Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.75-3M3 13h18M5 17h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Custom Web Development</h3>
+                        <p class="text-gray-600 text-center">Tailored website development solutions that perfectly align with your business goals and brand identity. We build unique experiences.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Responsive Design</h3>
+                        <p class="text-gray-600 text-center">Ensure your website looks and performs flawlessly on any device, from desktops to smartphones, providing an optimal user experience.</p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Performance Optimization</h3>
+                        <p class="text-gray-600 text-center">We optimize your website for speed and efficiency, leading to higher search rankings and improved user engagement. Fast loading is key.</p>
+                    </div>
+                    <!-- Feature Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">SEO Integration</h3>
+                        <p class="text-gray-600 text-center">Built-in search engine optimization strategies to help your website rank higher and attract more organic traffic. Get found online.</p>
+                    </div>
+                    <!-- Feature Card 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.92 12c0 2.872 1.15 5.518 3.04 7.418M12 21v-8m.051-8.618A11.955 11.955 0 0112 2.944a11.955 11.955 0 018.618 3.04A12.001 12.001 0 0021.08 12c0 2.872-1.15 5.518-3.04 7.418M12 21v-8"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Website Security</h3>
+                        <p class="text-gray-600 text-center">Robust security measures to protect your website and user data from cyber threats. Peace of mind for you and your visitors.</p>
+                    </div>
+                    <!-- Feature Card 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-blue-100">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Ongoing Support & Maintenance</h3>
+                        <p class="text-gray-600 text-center">Dedicated support and maintenance services to keep your website running smoothly and up-to-date. We're here for you long after launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 px-4 bg-white">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/BFDBFE/1E40AF?text=About+Website+Devs" alt="About Website Devs" class="rounded-xl shadow-xl">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <h2 class="text-4xl font-bold mb-6 text-blue-800">About Website Devs</h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        At <strong class="font-semibold text-blue-700">Website Devs</strong>, we are passionate about transforming ideas into powerful digital realities. With years of experience in the web development industry, our dedicated team of expert developers and designers is committed to delivering high-quality, scalable, and user-friendly websites. We pride ourselves on our meticulous attention to detail, innovative solutions, and client-centric approach.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our mission is to empower businesses and individuals with a strong online presence that drives growth and engagement. We stay abreast of the latest technologies and industry trends to ensure your website is not only visually appealing but also robust, secure, and optimized for peak performance and search engine visibility. Partner with Website Devs and let's build something extraordinary together.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer border border-blue-100" onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">What services do Website Devs offer?</h3>
+                            <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-300 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="faq-content mt-4 text-gray-700">
+                            <p>Website Devs specializes in custom web development, responsive design, e-commerce solutions, website redesigns, SEO optimization, performance enhancements, and ongoing maintenance and support. We cover the full spectrum of web services.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer border border-blue-100" onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">How long does it take to build a website?</h3>
+                            <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-300 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="faq-content mt-4 text-gray-700">
+                            <p>The timeline for website development varies depending on the complexity and features required. A simple static site might take 2-4 weeks, while a complex e-commerce platform or custom web application could take 8-12 weeks or more. We'll provide a detailed timeline after understanding your project.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer border border-blue-100" onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Do you provide SEO services?</h3>
+                            <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-300 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="faq-content mt-4 text-gray-700">
+                            <p>Yes, SEO (Search Engine Optimization) is a fundamental part of our web development process. We ensure your website is built with SEO best practices from the ground up, including proper structure, meta tags, and content optimization, to help you rank higher on search engines.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer border border-blue-100" onclick="toggleFaq(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">What is the cost of a website?</h3>
+                            <svg class="w-6 h-6 text-blue-600 transform transition-transform duration-300 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="faq-content mt-4 text-gray-700">
+                            <p>Website costs vary significantly based on your specific requirements, features, and design complexity. We offer competitive pricing and provide a custom quote after a thorough consultation to understand your needs. Contact us for a free, no-obligation estimate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="contact" class="bg-blue-800 text-white py-20 px-4 rounded-t-xl shadow-lg">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Build Your Dream Website?</h2>
+                <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90">Let the expert Website Devs bring your digital vision to life. Contact us today for a consultation!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="mailto:info@websitedevs.github.io" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">Email Us</a>
+                    <a href="tel:+1234567890" class="inline-block bg-gray-200 hover:bg-gray-300 text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">Call Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-4">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2025 Website Devs. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6 mb-4">
+                <li><a href="#" class="hover:text-white transition duration-300" onclick="openModal('privacy')">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white transition duration-300" onclick="openModal('terms')">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-white transition duration-300" onclick="openModal('about-footer')">About Us</a></li>
+                <li><a href="mailto:info@websitedevs.github.io" class="hover:text-white transition duration-300">Contact</a></li>
+            </ul>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Icons (placeholders) -->
+                <a href="#" class="hover:text-white transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.007-.533A8.349 8.349 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.093 4.093 0 013 10.106v.05a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.188a11.621 11.621 0 006.29 2.063c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.007-.533A8.349 8.349 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.093 4.093 0 013 10.106v.05a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.188a11.621 11.621 0 006.29 2.063"></path></svg></a>
+                <a href="#" class="hover:text-white transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.417 2.865 8.167 6.839 9.5.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.902-.615.068-.6.068-.6 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.82.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.93 0-1.09.39-1.984 1.029-2.684-.103-.253-.446-1.272.097-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.7 1.028 1.594 1.028 2.684 0 3.822-2.339 4.675-4.566 4.922.359.307.678.915.678 1.846 0 1.333-.012 2.41-.012 2.727 0 .267.18.577.688.484C20.137 20.165 23 16.416 23 12.017 23 6.484 18.522 2 12 2Z" clip-rule="evenodd"></path></svg></a>
+                <a href="#" class="hover:text-white transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.965.343 4.24.665c-.793.344-1.492.932-2.191 1.631-.7.7-1.288 1.399-1.632 2.191C.344 4.965.133 5.775.072 7.053.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.06 1.277.271 2.087.593 2.812.344.793.932 1.492 1.631 2.191.7.7 1.399 1.288 2.191 1.632 0 .008.009.009.009.009.725.321 1.535.532 2.813.592C8.333 23.986 8.74 24 12 24s3.667-.014 4.947-.072c1.277-.06 2.087-.271 2.812-.593.793-.344 1.492-.932 2.191-1.631.7-.7 1.288-1.399 1.632-2.191.321-.725.532-1.535.592-2.813.058-1.28.072-1.687.072-4.947s-.014-3.667-.072-4.947c-.06-1.277-.271-2.087-.593-2.812-.344-.793-.932-1.492-1.631-2.191-.7-.7-1.399-1.288-2.191-1.632-.725-.321-1.535-.532-2.813-.592C15.667.014 16.074 0 12 0ZM7.053 2.684a.047.047 0 00-.009-.009l.009.009Zm8.225 0a.047.047 0 01.009-.009l-.009.009ZM2.684 7.053a.047.047 0 00.009-.009l-.009.009Zm0 8.225a.047.047 0 01.009.009l-.009-.009Zm7.053 6.307a.047.047 0 00-.009.009l.009-.009Zm8.225 0a.047.047 0 01.009-.009l-.009.009ZM21.316 16.947a.047.047 0 00-.009.009l.009-.009Zm0-8.225a.047.047 0 01-.009-.009l.009.009Z"></path><path d="M12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27Zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666Zm9.007-4.471a1.267 1.267 0 11-2.533 0 1.267 1.267 0 012.533 0Z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Privacy Policy, Terms of Service, About Us (Footer) -->
+    <div id="infoModal" class="fixed inset-0 hidden items-center justify-center z-[100] modal-overlay animate-fade-in">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-2xl w-full mx-4 relative border border-blue-200">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold" onclick="closeModal()">
+                &times;
+            </button>
+            <h2 id="modalTitle" class="text-3xl font-bold mb-6 text-blue-800"></h2>
+            <div id="modalContent" class="text-gray-700 max-h-[70vh] overflow-y-auto pr-2 custom-scrollbar">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ accordion functionality
+        function toggleFaq(element) {
+            const content = element.querySelector('.faq-content');
+            const icon = element.querySelector('.arrow-icon');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.classList.remove('rotate-180');
+            } else {
+                // Close all other open FAQs first (optional, but good for single-open accordion)
+                document.querySelectorAll('.faq-content.open').forEach(openContent => {
+                    openContent.classList.remove('open');
+                    openContent.previousElementSibling.querySelector('.arrow-icon').classList.remove('rotate-180');
+                });
+                content.classList.add('open');
+                icon.classList.add('rotate-180');
+            }
+        }
+
+        // Modal functionality
+        const infoModal = document.getElementById('infoModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal(type) {
+            let title = '';
+            let content = '';
+
+            if (type === 'privacy') {
+                title = 'Privacy Policy';
+                content = `
+                    <h3 class="text-2xl font-semibold mb-3">Privacy Policy for Website Devs</h3>
+                    <p class="mb-4">Effective Date: June 7, 2025</p>
+                    <p class="mb-4">
+                        At <strong>Website Devs</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://websitedevs.github.io" class="text-blue-600 hover:underline">websitedevs.github.io</a>.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">1. Information We Collect</h4>
+                    <p class="mb-4">
+                        We may collect personal information such as your name, email address, phone number, and company details when you submit inquiries through our contact forms or interact with our services. We also collect non-personal information like browser type, IP address, and pages visited for analytical purposes.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">2. How We Use Your Information</h4>
+                    <p class="mb-4">
+                        The information we collect is used to:
+                        <ul class="list-disc list-inside ml-4 mb-4">
+                            <li>Provide, operate, and maintain our website.</li>
+                            <li>Improve, personalize, and expand our website.</li>
+                            <li>Understand and analyze how you use our website.</li>
+                            <li>Communicate with you, including for customer service, updates, and marketing.</li>
+                            <li>Detect and prevent fraud.</li>
+                        </ul>
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">3. Disclosure of Your Information</h4>
+                    <p class="mb-4">
+                        We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties without your consent, except to trusted third parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when its release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property or safety.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">4. Data Security</h4>
+                    <p class="mb-4">
+                        We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the Internet or method of electronic storage is 100% secure.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">5. Your Consent</h4>
+                    <p class="mb-4">
+                        By using our site, you consent to our website's privacy policy.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">6. Changes to Our Privacy Policy</h4>
+                    <p class="mb-4">
+                        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+                    </p>
+                `;
+            } else if (type === 'terms') {
+                title = 'Terms of Service';
+                content = `
+                    <h3 class="text-2xl font-semibold mb-3">Terms of Service for Website Devs</h3>
+                    <p class="mb-4">Effective Date: June 7, 2025</p>
+                    <p class="mb-4">
+                        Welcome to <strong>Website Devs</strong>. These Terms of Service ("Terms") govern your use of our website located at <a href="https://websitedevs.github.io" class="text-blue-600 hover:underline">websitedevs.github.io</a> (the "Service"). By accessing or using the Service, you agree to be bound by these Terms.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">1. Acceptance of Terms</h4>
+                    <p class="mb-4">
+                        By accessing and using our Service, you accept and agree to be bound by the terms and provisions of these Terms. If you do not agree to abide by the above, please do not use this Service.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">2. Services Offered</h4>
+                    <p class="mb-4">
+                        Website Devs provides web development services including, but not limited to, custom website design, responsive development, e-commerce solutions, and website maintenance. All services are subject to a separate agreement or proposal between Website Devs and the client.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">3. User Obligations</h4>
+                    <p class="mb-4">
+                        As a user of our Service, you agree to:
+                        <ul class="list-disc list-inside ml-4 mb-4">
+                            <li>Use the Service only for lawful purposes.</li>
+                            <li>Not engage in any activity that interferes with or disrupts the Service.</li>
+                            <li>Provide accurate and complete information when contacting us.</li>
+                        </ul>
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">4. Intellectual Property</h4>
+                    <p class="mb-4">
+                        All content on this website, including text, graphics, logos, images, and software, is the property of Website Devs or its content suppliers and protected by international copyright laws.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">5. Limitation of Liability</h4>
+                    <p class="mb-4">
+                        Website Devs shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses resulting from the use or the inability to use the Service.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">6. Governing Law</h4>
+                    <p class="mb-4">
+                        These Terms shall be governed by and construed in accordance with the laws of Pakistan, without regard to its conflict of law provisions.
+                    </p>
+                    <h4 class="text-xl font-semibold mb-2">7. Changes to Terms</h4>
+                    <p class="mb-4">
+                        We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms of Service on this page. Your continued use of the Service after any such changes constitutes your acceptance of the new Terms.
+                    </p>
+                `;
+            } else if (type === 'about-footer') { // Re-using the about content for the footer link
+                title = 'About Us';
+                content = `
+                    <h3 class="text-2xl font-semibold mb-3">About Website Devs</h3>
+                    <p class="mb-4">
+                        At <strong>Website Devs</strong>, we are passionate about transforming ideas into powerful digital realities. With years of experience in the web development industry, our dedicated team of expert developers and designers is committed to delivering high-quality, scalable, and user-friendly websites. We pride ourselves on our meticulous attention to detail, innovative solutions, and client-centric approach.
+                    </p>
+                    <p class="mb-4">
+                        Our mission is to empower businesses and individuals with a strong online presence that drives growth and engagement. We stay abreast of the latest technologies and industry trends to ensure your website is not only visually appealing but also robust, secure, and optimized for peak performance and search engine visibility. Partner with Website Devs and let's build something extraordinary together.
+                    </p>
+                    <p class="mb-4">
+                        We believe that a strong online presence is crucial for success in today's digital landscape. Whether you're a startup looking to establish your first online footprint or an established business aiming for a digital revamp, Website Devs is your trusted partner. Our commitment extends beyond just delivering a website; we aim to build lasting relationships with our clients, offering continuous support and guidance to help them thrive online.
+                    </p>
+                    <p>
+                        From conceptualization and design to development, deployment, and ongoing maintenance, our team handles every aspect of your web project with professionalism and expertise. We are not just developers; we are digital strategists who understand the nuances of online success. Let's collaborate and create a website that not only meets but exceeds your expectations.
+                    </p>
+                `;
+            }
+
+            modalTitle.textContent = title;
+            modalContent.innerHTML = content;
+            infoModal.classList.remove('hidden');
+            infoModal.classList.add('flex'); // Use flex to center
+            document.body.style.overflow = 'hidden'; // Prevent scrolling background
+        }
+
+        function closeModal() {
+            infoModal.classList.add('hidden');
+            infoModal.classList.remove('flex');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal when clicking outside of it
+        infoModal.addEventListener('click', (e) => {
+            if (e.target === infoModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
